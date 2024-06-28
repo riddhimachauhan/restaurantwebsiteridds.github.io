@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="contact.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navigation-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="contacts" class="contacts">
+        <div class="contacts-text">
+            <h1>Contact US</h1>
+            </div>
+            <div class="contacts-para">
+                <p>Place an order at : 95xxxxxxxx</p>
+                <p>Email : <a href="mailto:restaurantwebsite@gmail.com">restaurantwebsite@gmail.com</a></p>
+                </div>
+       
+        <h3>Reviews and Reservations</h3>
+        <form action="submit_review">
+            <label for="name">Name:</label>
+            <input type="text" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+            <br>
+            <label>Review/ Queries:</label>
+            <textarea  name="review"></textarea>
+            <br>
+            <label >Reservation Date:</label>
+            <input type="date"  name="reservation">
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

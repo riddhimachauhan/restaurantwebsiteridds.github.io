@@ -1,0 +1,81 @@
+@import url('common.css');
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1f2b21; 
+    background-size:contain;
+    background-position: center;
+    color: white;
+}
+
+.images {
+    display: flex;
+}
+
+.images img {
+    width: 380px; 
+    height: 380px; 
+    margin-right: 1px; 
+
+}
+.contacts {
+background-color: #1f2b21;
+      padding: 160px 20px;
+    text-align: center;
+    color: #e8e8e8;
+}
+
+.contacts h1{
+    size: 4em;
+    text-decoration: underline;
+    line-height: 100px;
+}
+
+.contacts-para p{
+    font-size: large;
+    color: white;
+    line-height: 50px;
+
+}
+.contacts form {
+    display:flexbox ;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    color: #fff;
+    line-height: 45px;
+}
+
+
+.contacts form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contacts form input,
+.contacts form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contacts form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contacts form button:hover {
+    background-color: #555;
+}
