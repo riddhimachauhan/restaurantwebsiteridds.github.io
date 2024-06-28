@@ -1,15 +1,14 @@
 @import url('common.css');
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 
-
 body {
     padding: 0;
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     scroll-behavior: smooth;
     scrollbar-width: 5px;
+    background-color: #1f2b21;
 }
-
 
 .section1 {
     background-image: url('images/image.png');
@@ -17,8 +16,9 @@ body {
     background-position: center;
     height: 100vh;
     position: relative;
+    margin-bottom: 20px; 
+    
 }
-
 
 header h1 {
     font-family: 'Times New Roman', Times, serif;
@@ -42,7 +42,7 @@ header h3 {
 
 .home {
     display: flex;
-    height: 100vh;
+    height: e;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -51,13 +51,14 @@ header h3 {
     background-size: cover;
     background-position: center;
     color: white;
+    padding: 20px 0; /* Added padding for space inside the home section */
+    margin-bottom: 20px; /* Added space between home section and images section */
 }
 
 .homepage-text {
     text-align: center;
     padding: 50px 20px;
 }
-
 
 @media (max-width: 1200px) {
     header h1 {
@@ -93,6 +94,40 @@ header h3 {
     .homepage-text {
         padding: 30px 10px;
     }
+
+    .food-items {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px; /* Adjusted padding */
+    }
+
+    .food-item {
+        flex: 1 1 100%;
+        margin: 20px 0; /* Increased margin */
+    }
+
+    .food-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .info {
+        padding: 10px;
+    }
+
+    .navigation-bar li {
+        flex: 100%;
+    }
+
+    .navigation-bar li a {
+        text-align: left;
+        padding: 14px;
+    }
+
+    /* Add margin between sections */
+    .section {
+        margin-bottom: 20px;
+    }
 }
 
 .food-items {
@@ -103,7 +138,7 @@ header h3 {
 }
 
 .food-item {
-    flex: 1 1 calc(25% - 20px);
+    flex: 1 1 calc(50% - 20px); /* Change 25% to 50% for better layout on smaller screens */
     margin: 10px;
     text-align: center;
     transition: transform 0.3s;
@@ -116,10 +151,18 @@ header h3 {
 .food-item img {
     max-width: 100%;
     height: 130px;
+    width:130px
 }
 
 .info {
     padding: 10px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px; /* Added padding to the top of the images section */
 }
 
 .images img {
@@ -127,8 +170,7 @@ header h3 {
     height: auto;
 }
 
-@media (max-width: 768px) ,(height: 768px) 
-{
+@media (max-width: 768px), (height: 768px) {
     .food-items {
         flex-direction: column;
         align-items: center;
@@ -139,40 +181,17 @@ header h3 {
         margin: 10px 0;
     }
 }
-.images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.images img {
-   
-    size-adjust: auto;
-    width:100% ; 
-    height: auto;
-    margin-right: 1px; 
-
-}
 
 @media (min-width: 600px) {
     .images img {
-        width: calc(50% - 5px); 
+        width: calc(50% - 5px);
         margin-bottom: 10px;
     }
 }
 
 @media (min-width: 900px) {
     .images img {
-        width: calc(25% - 5px); 
+        width: calc(25% - 5px);
         margin-bottom: 0;
-    }
-}
-@media (max-width: 600px) {
-    .navigation-bar li {
-        flex: 100%;
-    }
-
-    .navigation-bar li a {
-        text-align: left;
-        padding: 14px;
     }
 }
